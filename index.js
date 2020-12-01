@@ -1,17 +1,8 @@
 const express = require('express');
 const path = require('path');
+const members = require('./Members')
 
 const app = express();
-
-
-members = [
-    {
-        id: 1,
-        name: 'John',
-        email:  'John@gmail.com',
-        status: 'acitve'
-    }
-];
 
 //Gets all members
 app.get('/api/members', (req, res) => 
